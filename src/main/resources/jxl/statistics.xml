@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+    <worksheet name="工作表1">
+        <section startRow="0" endRow="0"/>
+        <loop startRow="1" endRow="1" items="statisticsVoList" var="statisticsVo" varType="com.use.vo.StatisticsVo">
+            <section startRow="1" endRow="1">
+                <mapping row="1" col="0">statisticsVo.date</mapping>
+                <mapping row="1" col="1">statisticsVo.filmName</mapping>
+                <mapping row="1" col="2">statisticsVo.seat</mapping>
+                <mapping row="1" col="3">statisticsVo.filedId</mapping>
+                <mapping row="1" col="4">statisticsVo.cinemaName</mapping>
+                <mapping row="1" col="5">statisticsVo.screeningHall</mapping>
+                <mapping row="1" col="6">statisticsVo.languageVersion</mapping>
+                <mapping row="1" col="7">statisticsVo.startTime</mapping>
+                <mapping row="1" col="8">statisticsVo.endTime</mapping>
+                <mapping row="1" col="9">statisticsVo.ticketNum</mapping>
+                <mapping row="1" col="10">statisticsVo.seat1</mapping>
+                <mapping row="1" col="11">statisticsVo.code</mapping>
+                <mapping row="1" col="12">statisticsVo.memo</mapping>
+                <mapping row="1" col="13">statisticsVo.memoInfo</mapping>
+            </section>
+            <loopbreakcondition>
+                <rowcheck offset="0">
+                    <cellcheck offset="0"></cellcheck>
+                </rowcheck>
+            </loopbreakcondition>
+        </loop>
+    </worksheet>
+</workbook>

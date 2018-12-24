@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+    <worksheet name="工作表1">
+        <section startRow="0" endRow="0"/>
+        <loop startRow="1" endRow="1" items="buyVoList" var="buyVo" varType="com.use.vo.BuyVo">
+            <section startRow="1" endRow="1">
+                <mapping row="1" col="0">buyVo.batchId</mapping>
+                <mapping row="1" col="1">buyVo.fieldId</mapping>
+                <mapping row="1" col="2">buyVo.date</mapping>
+                <mapping row="1" col="3">buyVo.filmId</mapping>
+                <mapping row="1" col="4">buyVo.startTime1</mapping>
+                <mapping row="1" col="5">buyVo.cinemaId</mapping>
+                <mapping row="1" col="6">buyVo.screeningHall</mapping>
+                <mapping row="1" col="7">buyVo.languageVersion</mapping>
+                <mapping row="1" col="8">buyVo.startTime2</mapping>
+                <mapping row="1" col="9">buyVo.endTime</mapping>
+                <mapping row="1" col="10">buyVo.buyNum</mapping>
+                <mapping row="1" col="11">buyVo.restNum</mapping>
+                <mapping row="1" col="12">buyVo.webSiteId</mapping>
+                <mapping row="1" col="13">buyVo.buyMoney</mapping>
+                <mapping row="1" col="14">buyVo.price</mapping>
+                <mapping row="1" col="15">buyVo.cachedTag</mapping>
+                <mapping row="1" col="16">buyVo.publishType</mapping>
+            </section>
+            <loopbreakcondition>
+                <rowcheck offset="0">
+                    <cellcheck offset="0"></cellcheck>
+                </rowcheck>
+            </loopbreakcondition>
+        </loop>
+    </worksheet>
+</workbook>
